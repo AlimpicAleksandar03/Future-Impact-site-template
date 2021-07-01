@@ -18,6 +18,7 @@ textarea {
 body {
   padding-top: 3.5em;
   transition: all 0.5s ease;
+  background: #f4f4f4;
 }
 
 .wrapper {
@@ -43,6 +44,10 @@ h6 {
   line-height: 1.65;
   margin: 0 0 1em 0;
   text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 2em;
 }
 
 a {
@@ -98,6 +103,9 @@ ul {
 .button.large {
   font-size: 0.7em;
   padding: 0 3em;
+}
+
+.button.fit {
   width: 100%;
 }
 
@@ -105,18 +113,90 @@ ul {
   transition: all 0.5s ease;
 }
 .is-menu-visible .menu {
-  opacity: 1;
   transform: translateX(0);
-  transition: all 0.5s ease !important;
 }
 .is-menu-visible .wrapper {
   opacity: 0.15;
-  transition: all 0.5s ease;
+}
+
+.main .article {
+  padding: 3em 3em 1em 3em;
+  background: #ffffff;
+  border: solid 1px rgba(160, 160, 160, 0.3);
+  margin: 0 0 3em 0;
+  position: relative;
+}
+.main .article header {
+  display: flex;
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+  left: -3em;
+  margin: -3em 0 3em 0;
+  position: relative;
+  width: calc(100% + 6em);
+}
+.main .article header .title {
+  flex-grow: 1;
+  padding: 3.75em 3em 3.3em 3em;
+}
+.main .article header .title h2 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.main .article header .title h2 a {
+  color: inherit;
+}
+.main .article header .title p {
+  margin-bottom: 0;
+}
+.main .article header .meta {
+  padding: 3.75em 3em 1.75em 3em;
+  border-left: solid 1px rgba(160, 160, 160, 0.3);
+  min-width: 17em;
+  text-align: right;
+  width: 17em;
+}
+.main .article header .meta time {
+  letter-spacing: 0.25em;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #3c3b3b;
+  display: block;
+  font-size: 0.7em;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+.main .article header .meta .author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.6em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: inherit;
+}
+.main .article header .meta .author span {
+  border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
+  display: block;
+  margin: 0 1.5em 0 0;
+  transition: all 0.2s ease;
+}
+.main .article header .meta .author span:hover {
+  color: #2ebaae;
+  border-color: transparent;
+}
+.main .article header .meta .author img {
+  border-radius: 100%;
+  display: block;
+  width: 4em;
 }
 
 .menu {
-  opacity: 0;
-  transition: all 0.5s ease !important;
+  transition: all 0.5s ease;
   background: #fff;
   border-left: solid 1px rgba(160, 160, 160, 0.3);
   height: 100%;
@@ -172,9 +252,6 @@ ul {
   margin-top: 0;
   padding-top: 0;
 }
-.menu section:nth-child(2) .links li a {
-  display: block;
-}
 .menu section:nth-child(2) .links li a h3 {
   font-size: 0.7em;
 }
@@ -195,6 +272,7 @@ ul {
 }
 
 .header {
+  transition: all 0.5s ease;
   position: fixed;
   top: 0;
   left: 0;
@@ -204,6 +282,7 @@ ul {
   height: 3.5em;
   border-bottom: solid 1px rgba(160, 160, 160, 0.3);
   display: flex;
+  background: #fff;
   transition: all 0.5s ease !important;
 }
 .header h1 {
@@ -244,7 +323,7 @@ ul {
   border-bottom: 0;
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 0.7em;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
