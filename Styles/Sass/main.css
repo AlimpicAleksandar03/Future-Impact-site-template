@@ -128,7 +128,6 @@ ul {
   width: 25em;
   z-index: 10002;
   transform: translateX(25em);
-  transition: transform 0.5s ease-in-out !important;
 }
 .menu > * {
   padding: 3em;
