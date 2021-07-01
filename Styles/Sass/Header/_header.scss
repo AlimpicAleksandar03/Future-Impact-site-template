@@ -78,6 +78,7 @@
       border-left: solid 1px rgba(160, 160, 160, 0.3);
     }
     input {
+      display: inline-block;
       transition: all 0.5s ease;
       position: absolute;
       top: 0.75em;

@@ -1,0 +1,23 @@
+.single-html {
+  .wrapper {
+    display: block;
+  }
+  .footer {
+    text-align: center;
+    color: #aaaaaa;
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 1em;
+      }
+    }
+    .copyright {
+      color: #aaaaaa;
+      font-family: "Raleway", Helvetica, sans-serif;
+      font-size: 0.5em;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+  }
+}
