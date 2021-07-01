@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+$primary-green: #2ebaae;
+
 @mixin fonts() {
   color: #646464;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -58,8 +60,6 @@
   }
 }
 
-$primary-green: #2ebaae;
-
 body,
 input,
 select,
@@ -112,6 +112,7 @@ a:hover {
 
 ul {
   list-style: none;
+  margin-bottom: 2em;
 }
 
 .button {
@@ -133,6 +134,7 @@ ul {
     transform: translateX(0);
   }
   .wrapper {
+    pointer-events: none;
     opacity: 0.15;
   }
 }

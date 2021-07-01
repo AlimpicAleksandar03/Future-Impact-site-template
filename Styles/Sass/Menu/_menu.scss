@@ -46,6 +46,7 @@
   }
   section:nth-child(2) {
     .links {
+      margin: 0;
       li {
         border: 0;
         border-top: dotted 1px rgba(160, 160, 160, 0.3);
@@ -74,11 +75,10 @@
     }
   }
   section:nth-child(3) {
-    .actions {
+    .actions.stacked {
       flex-direction: column;
-      li {
-        padding: 1.3em 0 0 0;
-      }
+      margin: 0;
+
     }
   }
   transform: translateX(25em);
